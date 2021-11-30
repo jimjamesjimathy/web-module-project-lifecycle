@@ -76,14 +76,16 @@ select {
 body {
   background-color: #FFF;
 }
-
+.User {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
 .App {
   height: 100vh;
-  width: 55%;
+  width: 75%;
   margin: 0 auto;
   text-align: center;
-  display: flex;
-  flex-flow: column nowrap;
 }
 .header {
     background-color: dodgerblue;

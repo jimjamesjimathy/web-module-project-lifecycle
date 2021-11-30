@@ -6,20 +6,26 @@ import FollowerList from './components/FollowerList';
 
 
 class App extends React.Component {
+  state = {
+    selectedUser: 'jimjamesjimathy',
+    user: {},
+    followers: []
+  }
 
   componentDidMount() {
-    axios.get('https://api.github.com/users/jimjamesjimathy')
+    axios.get(`https://api.github.com/users/${this.state.selectedUser}`)
       .then(res => {
-        console.log(res)
+        this.setState({
+          ...this.state,
+          user: res.data
+        });
       })
       .catch(err => {
-        console.log(err)
+        console.log(err);
       })
   }
 
-
   render() {
-    console.log('Go on Git: App rendering')
     return(
       <div className='App'>
         <div className='header'>
@@ -29,7 +35,11 @@ class App extends React.Component {
             <button>search</button>
           </form>
         </div>
-        <img src='https://avatars.githubusercontent.com/u/85250373?v=4' width='300'></img>
+        <User user={this.state.user} />
+        <FollowerList followers={this.state.followers} />
+
+
+
       </div>
     );
   }
