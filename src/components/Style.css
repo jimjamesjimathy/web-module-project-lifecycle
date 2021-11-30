@@ -74,12 +74,10 @@ select {
   }
 }
 body {
-  background-color: #FFF;
+  background-color: #000;
 }
-.User {
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
+.header {
+    background-color: dodgerblue;
 }
 .App {
   height: 100vh;
@@ -87,6 +85,25 @@ body {
   margin: 0 auto;
   text-align: center;
 }
-.header {
-    background-color: dodgerblue;
+.User {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3% 5%;
+    font-size: 1.55rem;
+    line-height: 3;
+    background-color: lightcoral;
+}
+.fList {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3% 5%;
+    overflow: scroll;
+    background-color: lightslategrey;
+}
+::-webkit-scrollbar {
+    display: none;
 }

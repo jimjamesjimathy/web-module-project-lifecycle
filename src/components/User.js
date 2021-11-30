@@ -8,13 +8,13 @@ class User extends React.Component {
         return(
             <section className='User'>
                 <div className='UserImg'>
-                    <img src={user.avatar_url}></img>
+                    <img src={user.avatar_url} width='350'></img>
                     <a target='_blank' href={user.html_url}><h3>{user.name}</h3></a>
                 </div>
                 <div className="UserInfo">
-                    <p>{user.login}</p>
-                    <p>Total Repos: {user.public_repos}</p>
-                    <p>Total Followers: {user.followers}</p>
+                    <p><strong>Username: </strong> {user.login}</p>
+                    <p><strong>Total Repos: </strong> {user.public_repos}</p>
+                    <p><strong>Total Followers: </strong>{user.followers}</p>
                 </div>
             </section>
         )
