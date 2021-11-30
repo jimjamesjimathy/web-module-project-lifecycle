@@ -32,34 +32,34 @@ In this project you will build an application that allows for github user and fo
 #### Build your DOM
 > *Creating the DOM for your application base on your template and data*
 * [x] Take a look at the [included mockup](./card_mockup.png).
-* [ ] Use your browser to take a look at the data returned when using the following endpoints: https://api.github.com/users/your_github_name and https://api.github.com/users/your_github_name/followers
-* [ ] Using these three pieces of information, build the DOM necessary to display all application information.
-* [ ] Make use of the User.js (for holding all user information), FollowerList.js (for map through a followers list) and Follower.js (for displaying an individual follower) components to efficiently distribute your code. ***All components should be class based for this assignment.***
-* [ ] Feel free to leave the search form within App.js.
-* [ ] Lightly style as needed.
-* [ ] Commit all changes before proceeding.
+* [x] Use your browser to take a look at the data returned when using the following endpoints: https://api.github.com/users/your_github_name and https://api.github.com/users/your_github_name/followers
+* [x] Using these three pieces of information, build the DOM necessary to display all application information.
+* [x] Make use of the User.js (for holding all user information), FollowerList.js (for map through a followers list) and Follower.js (for displaying an individual follower) components to efficiently distribute your code. ***All components should be class based for this assignment.***
+* [x] Feel free to leave the search form within App.js.
+* [x] Lightly style as needed.
+* [x] Commit all changes before proceeding.
 
 #### Add in your state
 > *Now that we have all the DOM necessary to run our application, let's proceed to building in our state*
-* [ ] In App.js, add in state. Include a slice for state for:
+* [x] In App.js, add in state. Include a slice for state for:
     - A string defining the user we are currently searching for
     - An object containing all user information
     - The array of all followers
-* [ ] Using our two github endpoints as a base, add your github user name, as well as test data for the user object and followers array to insure it is connected correctly.
-* [ ] Connect make sure that the test data within state correct displays within your User, FollowerList and Follower components.
+* [x] Using our two github endpoints as a base, add your github user name, as well as test data for the user object and followers array to insure it is connected correctly.
+* [x] Connect make sure that the test data within state correct displays within your User, FollowerList and Follower components.
 
 #### Load in the user and follower on mount
 > *We can now do our api calls to get our initial data*
-* [ ] Make our user object and follower list state empty by default.
-* [ ] Keep our searched user state your github username by default.
-* [ ] Use componentDidMount to load initial user data for your github name into state.
-* [ ] Use componentDidUpdate to load follower information ***only when the user slice of state changes value. Make be careful to avoid infinite loops while building this portion.***
+* [x] Make our user object and follower list state empty by default.
+* [x] Keep our searched user state your github username by default.
+* [x] Use componentDidMount to load initial user data for your github name into state.
+* [x] Use componentDidUpdate to load follower information ***only when the user slice of state changes value. Make be careful to avoid infinite loops while building this portion.***
 
 #### Build search capabilities within your APP
 > *Now let's allow users to search for new github usernames*
-* [ ] Connect your form in App.js so that typing into a input updated your current user state.
-* [ ] When your form is submitted, make an api call on current user. Set the returned user data to state.
-* [ ] Ensure that followers is correctly updated.
+* [x] Connect your form in App.js so that typing into a input updated your current user state.
+* [x] When your form is submitted, make an api call on current user. Set the returned user data to state.
+* [x] Ensure that followers is correctly updated.
 
 ### Task 3: Stretch goals
 - [ ] We are making several api calls of the same type in our code. How can we make this portion more dry?
