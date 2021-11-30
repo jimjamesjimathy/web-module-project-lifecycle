@@ -22,16 +22,16 @@ In this project you will build an application that allows for github user and fo
 
 ## Instructions
 ### Task 1: Project Set Up
-* [ ] Create a forked copy of this project.
-* [ ] Clone your OWN version of the repository in your terminal
-* [ ] cd into the project base directory `cd web-module-project-lifecycle`
-* [ ] Download project dependencies by running `npm install`
-* [ ] Start up the app using `npm start`
+* [x] Create a forked copy of this project.
+* [x] Clone your OWN version of the repository in your terminal
+* [x] cd into the project base directory `cd web-module-project-lifecycle`
+* [x] Download project dependencies by running `npm install`
+* [x] Start up the app using `npm start`
 
 ### Task 2: Project Requirements
 #### Build your DOM
 > *Creating the DOM for your application base on your template and data*
-* [ ] Take a look at the [included mockup](./card_mockup.png).
+* [x] Take a look at the [included mockup](./card_mockup.png).
 * [ ] Use your browser to take a look at the data returned when using the following endpoints: https://api.github.com/users/your_github_name and https://api.github.com/users/your_github_name/followers
 * [ ] Using these three pieces of information, build the DOM necessary to display all application information.
 * [ ] Make use of the User.js (for holding all user information), FollowerList.js (for map through a followers list) and Follower.js (for displaying an individual follower) components to efficiently distribute your code. ***All components should be class based for this assignment.***
